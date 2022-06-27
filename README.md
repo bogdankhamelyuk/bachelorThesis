@@ -1,1 +1,11 @@
-# bachelorThesis
+# Abstract
+## Recognition of commands spoken in dialect
+
+This paper explores the possibility of recognising the Vorarlberg dialect of German us-ing modern speech recognition models. The models used were the monolingual Wav2Vec developed by Facebook and its multilingual analogue XLSR. Both models were finetuned with the collected speech samples of the dialect. The XLSR additionally pre-trained for German (XLSRDe) was also used, which was later finetuned to the dia-lect as well. The quality of the results was measured with the word error rate (WER). 
+
+Speech samples in the dialect were collected manually from the different sources. The total duration of training data is approximately 34 minutes. The complexity of the audio dataset was estimated by the number of words, or the size of the general vocabulary of the dataset. The training was done in stages. An attempt was made to determine the dependencies in recognition quality between different parameters by creating different dataset combinations. 
+
+The results of this work show that the XLSR has the lowest average WER and the smallest difference between the maximum and minimum WER. Furthermore, it is evi-dent that voice-related information has no effect on recognition when the data is fully labelled. The paper aims to give the reader a general overview of the recognition per-formance of the three models in order to be able to choose a suitable model for further development.
+
+# Datasets
+Since there were no ready-made Vorarlberg datasets, a secondary goal was discovered - to collect the audio files in the most effective way. Two methods were used for this purpose: Email sending with the link to the recording website and a manual recording of the dialect samples. In the first variant 27 persons (14 women and 13 men) were reached, who pronounced 21 speech commands written in High German in their dialect. In the second variant, the speech examples were recorded from public sources, such as "Dornbirner Mundart Lexikon" and "d'Sprôôch - Lustenauer Wörterbuch". Finally, the audio files were mixed together or individually routed to the models in the form of a dataset. The fine-tuning was done using GoogleColab, which is basically a Jupyter notebook with access to remote GPUs from Google. For a better understanding and overview, the training results were also displayed graphically.
