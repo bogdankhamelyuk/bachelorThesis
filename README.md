@@ -17,6 +17,7 @@ Since there were no datasets available, it was decided to create some datasets a
 ## Implementation  
 ### Collecting of Audio
 Collecting of audios was made in two ways: externally and manually. In the first option there was Django-based website created and deployed using Microsoft Azure. This website consisted from two parts: survey and pages with the sentences to read.
+
 <img width="550" alt="image" src="https://user-images.githubusercontent.com/71139952/181834105-18b8ab30-2c3b-42ef-8e2c-969d77a5121d.png">
 <img width="337" alt="image" src="https://user-images.githubusercontent.com/71139952/181834121-f1855100-0efe-4ba4-8e7a-1309291d9ced.png">
 
